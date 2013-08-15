@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>HANDS ON PYTHON</h1>
+        </section>
+        <section>
+          <h2>WHAT IS PYTHON?</h2>
+          <div>
+            <div>
+              <ul>
+                <li class="fragment" data-fragment-index="0">
+                  <span style="text-align: center;">A dynamic, interpreted, high-level language</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <span style="text-align: center;">Does not require declaring the types of variables or parameters or methods</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <span style="text-align: center;">Extremely readable</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="3">
+                  <span style="text-align: center;">Used for solving a <b>
+                  <i>
+                  <font style="font-size: 42px;">really</font>
+                  </i>
+                  </b> wide range of problems</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="4">
+                  <span style="text-align: center;">Object-oriented</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="5">
+                  <span style="text-align: center;">Does not force Object-orientation</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="6">
+                  <span style="text-align: center;">Has and requires common sense</span>
+                  <br>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Who all are using Python?</h2>
+          <div class="absolute-element" style="position: absolute; width: 967px; height: 394px; z-index: 4; left: -5px; top: 103px;">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70392/nasa-100.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70395/yahoo.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70396/google.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70397/youtube.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70398/reddit.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70400/bittorrent.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70401/ibm.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70402/dropbox.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70404/redhat.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70406/canonical.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70407/netflix.png">
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/ratnadeepdebnath/images/70408/quora.png">
+            <br>
+          </div>
+        </section>
+        <section>
+          <h2>Hello WOrld</h2>
+          <div style="text-align: justify;">In Python interpreter</div>
+          <div>
+            <pre><code> &gt;&gt;&gt; print "Hello, world."</code></pre>
+          </div>
+          <div style="text-align: left;">
+            <span>
+            <br>
+            </span>
+          </div>
+          <div style="text-align: left;">
+            <span>As a script</span>
+          </div>
+          <div style="text-align: left;">
+            <font style="font-size: 24px;">Open your favorite editor and type</font>
+          </div>
+          <div style="text-align: left;">
+            <pre><code>#! /usr/bin/env python
+      print "Hello, world."</code></pre>
+          </div>
+          <div style="text-align: left;">
+            <font style="font-size: 24px;">and save it as <i>
+            <b>hello.py</b>
+            </i>. And then execute it from command line as below</font>
+          </div>
+          <div style="text-align: left;">
+            <pre><code>$ python hello.py</code></pre>
+          </div>
+          <br>
+        </section>
+        <section>
+          <section>&nbsp;<font face="League Gothic, Impact, sans-serif" class="absolute-element" style="position: absolute; width: 409px; height: 77px; z-index: 4; left: 307px; top: 283px;">
+            <span style="font-size: 76.5696792602539px; text-transform: uppercase;">Get your feet wet</span>
+            </font>
+          </section>
+          <section>
+            <h2>VARIABLES &amp; DATATYPES</h2>
+            <div style="text-align: left;">
+              <ul>
+                <li class="fragment" data-fragment-index="0">Identifiers</li>
+                <li class="fragment" data-fragment-index="1">Keywords</li>
+                <li class="fragment" data-fragment-index="2">Assignments</li>
+                <li class="fragment" data-fragment-index="2">Operators &nbsp;&amp; Expressions</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2></h2>
+            <h2 style="font-style: normal; font-variant: normal;">IDENTIFIERS</h2>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal; text-transform: none;">
+              <br>
+            </div>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal; text-transform: none;">
+              <pre style="width: 861.6880493164063px;">
+          <code>identifier ::= (letter|"_") (letter | digit | "_")*</code>
+          <code>letter ::= lowercase | uppercase</code>
+          <code>lowercase ::= "a"..."z"</code>
+          <code>uppercase ::= "A"..."Z"</code>
+          <code>digit ::= "0"..."9"</code>
+      </pre>
+            </div>
+            <font style="font-size: 35.73251724243164px; text-transform: none;">
+              <div style="font-size: 24px;">
+                <font style="font-size: 24px;">
+                <br>
+                </font>
+              </div>
+              <div style="font-size: 24px;">
+                <font style="font-size: 24px;">
+                <br>
+                </font>
+              </div>
+            </font>
+            <blockquote class="fragment" data-fragment-index="0" style="font-size: 35.73251724243164px; font-variant: normal; width: 670.2040405273438px; text-transform: none;">
+              <font>
+              <font style="font-size: 32px;">
+              <span style="font-style: normal;">So, while&nbsp;</span>
+              <b>abc</b>
+              <span style="font-style: normal;">&nbsp;is a valid identifier,&nbsp;</span>
+              <b>_abc</b>
+              <span style="font-style: normal;">&nbsp;is not :)</span>
+              </font>
+              </font>
+            </blockquote>
+            <br>
+          </section>
+          <section>
+            <h2 style="font-style: normal; font-variant: normal;">KEYWORDS</h2>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal;">
+              <br>
+            </div>
+            <pre style="font-style: normal; font-variant: normal; width: 861.6880493164063px;">
+      <code>and        del       from      not     while</code>
+      <code>as         elif      global    or      with</code>
+      <code>assert     else      if        pass    yield</code>
+      <code>break      except    import    print</code>
+      <code>class      exec      in        raise</code>
+      <code>continue   finally   is        return</code>
+      <code>def        for       lambda    try</code>
+      </pre>
+            <br>
+          </section>
+          <section>
+            <h2>Assignments</h2>
+            <blockquote>In Python, we don't declare what kind of data we want to put in a variable.</blockquote>
+            <pre class="absolute-element" style="position: absolute; width: 869px; height: 131px; z-index: 4; left: 35px; top: 295px;">
+          <code>
+              <span style="font-family: monospace;"> &gt;&gt;&gt; a = 12</span>
+              <br>
+          </code>
+          <code> &gt;&gt;&gt; b = 23</code>
+          <code> &gt;&gt;&gt; a + b</code>
+          <code> &gt;&gt;&gt; 35</code>
+      </pre>
+            <div style="text-align: left;">
+              <span>
+              <br>
+              </span>
+            </div>
+            <div style="text-align: left;">
+              <span>Examples</span>
+            </div>
+          </section>
+          <section>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal;">Multiple assignments</div>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal;">
+              <br>
+            </div>
+            <div style="font-size: 35.73251724243164px; font-style: normal; font-variant: normal;">
+              <pre style="width: 859.3949584960938px;">
+          <code>&gt;&gt;&gt; a, b  = 10, 12</code>
+          <code>&gt;&gt;&gt; print a</code>
+          <code>10</code>
+          <code>&gt;&gt;&gt; print b</code>
+          <code>12</code>
+      </pre>
+            </div>
+            <br>
+          </section>
+          <section>
+            <h2>Python is fun</h2>
+            <div class="fragment" data-fragment-index="0">Let's try to swap 2 numbers</div>
+            <div class="fragment" data-fragment-index="1">
+              <pre><code># The usual way</code><code>&gt;&gt;&gt; a = 10</code><code>&gt;&gt;&gt; b = 20</code><code>&gt;&gt;&gt; c = b</code><code>&gt;&gt;&gt; b = a</code><code>&gt;&gt;&gt; a = c</code><code>&gt;&gt;&gt; print a, b</code><code>20 10</code></pre>
+            </div>
+            <div class="fragment absolute-element" data-fragment-index="2" style="position: absolute; width: 951px; height: 242px; z-index: 4; left: 5px; top: 460px; max-height: none; max-width: none;">
+              <pre><code># The Pythonic way</code><code>&gt;&gt;&gt; a, b = 10, 20</code><code>&gt;&gt;&gt; a, b = b, a</code><code>&gt;&gt;&gt; print a, b</code><code>20 10</code></pre>
+            </div>
+            <br>
+          </section>
+          <section>
+            <h2>DATATYPES</h2>
+            <div>
+              <pre><code># Integer</code><code>&gt;&gt;&gt; a = 10</code><code># Float</code><code>&gt;&gt;&gt; b = 2.35</code><code># String</code><code>&gt;&gt;&gt; c = "Hello"</code><code># List</code><code>&gt;&gt;&gt; d = [1, 2, 'blah', 3.2]</code><code># Dictionary</code><code>&gt;&gt;&gt; f = {'a': 1, 'b': 2.3, 'c': "foo"}</code><code>&gt;&gt;&gt; f['b']</code><code>2.3</code></pre>
+            </div>
+            <br>
+          </section>
+          <section>
+            <h2>Operators</h2>
+            <div>
+              <br>
+            </div>
+            <div>
+              <ul>
+                <li class="fragment" data-fragment-index="0">
+                  <span style="text-align: center;">Arithmetic: +, -, /, *, %, //</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="1">
+                  <span style="text-align: center;">Relational: &gt;, &lt;, &gt;=, &lt;=, ==, !=</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="2">
+                  <span style="text-align: center;">Logical: and, or</span>
+                  <br>
+                </li>
+                <li class="fragment" data-fragment-index="3">
+                  <span style="text-align: center;">Shorthand: +=, /=, -=, *=</span>
+                  <br>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Arithmetic operators</h2>
+            <div>
+              <br>
+            </div>
+            <div>
+              <pre><code>&gt;&gt;&gt; 2 + 3
+      5
+      &gt;&gt;&gt; 23 - 3
+      20
+      &gt;&gt;&gt; 22.0 / 12
+      1.8333333333333333</code><code>&gt;&gt;&gt; 14 % 3</code><code>2</code><code>&gt;&gt;&gt; 4.0 // 3
+      1.0
+      &gt;&gt;&gt; 4.0 / 3
+      1.3333333333333333</code></pre>
+            </div>
+            <br>
+          </section>
+          <section>
+            <h2>Logical operators</h2>
+            <div>
+              <div style="text-align: justify; ">
+                <font style="font-size: 24px;">To do logical AND , OR we use and ,*or* keywords. x and y returns False if x is False else it returns evaluation of y. If x is True, it returns True.</font>
+              </div>
+              <div>
+                <br>
+              </div>
+              <div>
+                <pre><code>&gt;&gt;&gt; 1 and 4
+      4
+      &gt;&gt;&gt; 1 or 4
+      1
+      &gt;&gt;&gt; -1 or 4
+      -1
+      &gt;&gt;&gt; 0 or 4
+      4 </code></pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>
+              <span style="color: rgb(0, 0, 0);">Shorthand Operators</span>
+            </h2>
+            <div>
+              <div style="text-align: left; ">
+                <font style="font-size: 24px;">x op = expression is the syntax for shorthand operators. It will be evaluated like x = x op expression , Few examples are</font>
+              </div>
+              <div>
+                <br>
+              </div>
+              <div>
+                <pre><code>&gt;&gt;&gt; a = 12
+      &gt;&gt;&gt; a += 13
+      &gt;&gt;&gt; a
+      25
+      &gt;&gt;&gt; a /= 3
+      &gt;&gt;&gt; a
+      8
+      &gt;&gt;&gt; a += (26 * 32)
+      &gt;&gt;&gt; a
+      840 </code></pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Expressions</h2>
+            <div style="text-align: left; ">
+              <font style="font-size: 24px;">Expressions are made of operators and operands. An expression is like 2 + 3 .</font>
+            </div>
+            <div>
+              <div style="text-align: left; ">
+                <font style="font-size: 24px;">Generally while writing expressions we put <b>spaces before and after every operator</b> so that the code becomes clearer to read, like</font>
+              </div>
+              <div>
+                <pre><code>a = 234 * (45 - 56.0 / 34) </code></pre>
+              </div>
+            </div>
+            <div style="text-align: left; ">
+              <font style="font-size: 24px;">How expressions are evaluated</font>
+            </div>
+            <div>
+              <pre><font style="font-size: 24px;"><span style="font-style: normal; font-variant: normal;">(6 + 3) - 12 / 3 + 3 * 2 -1<br></span></font><font style="font-size: 24px;"><span style="font-style: normal; font-variant: normal;">9 - 12 / 3 + 3 * 2 -1<br></span></font><font style="font-size: 24px;">9 - 4 + 3 * 2 - 1<br></font><font style="font-size: 24px;">9 - 4 + 6 - 1<br></font><font style="font-size: 24px;">5 + 6 - 1<br></font><font style="font-size: 24px;">11 - 1<br></font><font style="font-size: 24px;">10</font></pre>
+            </div>
+            <br>
+          </section>
+          <section>
+            <h2>
+              <span style="color: rgb(0, 0, 0);">Type Conversions</span>
+            </h2>
+            <div>
+              <div>
+                <br>
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    <span style="text-align: center;">float(string) -&gt; float value</span>
+                    <br>
+                  </li>
+                  <li>
+                    <span style="text-align: center;">int(string) -&gt; integer value</span>
+                    <br>
+                  </li>
+                  <li>
+                    <span style="text-align: center;">str(integer) or str(float) -&gt; string representation</span>
+                  </li>
+                </ul>
+                <div style="text-align: left;">
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div>
+              <pre><code>&gt;&gt;&gt; a = 8.126768
+      &gt;&gt;&gt; str(a)
+      '8.126768' </code></pre>
+            </div>
+            <br>
+          </section>
+        </section>
+        <section>
+          <h2>
+            <b>If-else</b> , the control flow
+          </h2>
+          <div>
+            <pre><code>if <b><i>expr1</i></b>:
+          do this
+      elif <b><i>expr2</i></b>:
+          do that
+      ...
+      ...
+      ...
+      else:
+         do whatever </code></pre>
+          </div>
+          <div style="text-align: left;" class="fragment" data-fragment-index="0">
+            <span>
+            <font style="font-size: 32px;">Truth value testing</font>
+            </span>
+          </div>
+          <div class="fragment" data-fragment-index="1">
+            <div style="text-align: left;">
+              <span>
+              <font style="font-size: 24px;">
+              <b>DO</b>
+              </font>
+              </span>
+            </div>
+            <div style="text-align: left; ">
+              <pre><code>if x:
+          pass </code></pre>
+            </div>
+          </div>
+          <div class="fragment" data-fragment-index="2">
+            <div style="text-align: left; ">
+              <span>
+              <font style="font-size: 24px;">
+              <b>DON'T<br>
+              </b>
+              </font>
+              </span>
+            </div>
+            <div style="text-align: left; ">
+              <pre><code>if x == True:
+          pass</code></pre>
+            </div>
+          </div>
+          <p></p>
+          <p>
+            <code>
+            <span style="color: rgb(220, 220, 220); font-family: monospace; text-align: left; white-space: pre-wrap;"> </span>
+            </code>
+          </p>
+          <div style="text-align: left;"></div>
+          <p></p>
+          <br>
+        </section>
+        <section>
+          <section>
+            <h1 class="absolute-element" style="position: absolute; width: 427px; height: 116px; z-index: 4; left: 269px; top: 260px;">
+              <b>Functions</b>
+            </h1>
+            <div>
+              <br>
+            </div>
+          </section>
+          <section>
+            <h2>Defining a function</h2>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <pre><code>def functionname(params):
+      &nbsp; &nbsp; statement1
+      &nbsp; &nbsp; statement2 </code></pre>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+          </section>
+          <section>
+            <h2>Sum of 2 integers</h2>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div style="background-color: #3F3F3F;">
+              <div class="fragment" data-fragment-index="1">
+                <div style="text-align: left; ">
+                  <font style="font-size: 24px;" color="#ffffff">&gt;&gt;&gt; def sum(a, b):</font>
+                </div>
+                <div style="text-align: left; ">
+                  <font style="font-size: 24px;" color="#ffffff">... &nbsp; &nbsp; return a + b</font>
+                </div>
+              </div>
+              <div class="fragment" data-fragment-index="2">
+                <div style="text-align: left; ">
+                  <font style="font-size: 24px;" color="#ffffff">&gt;&gt;&gt; res = sum(234234, 34453546464)</font>
+                </div>
+                <div style="text-align: left; ">
+                  <font style="font-size: 24px;" color="#ffffff">&gt;&gt;&gt; res</font>
+                </div>
+                <div style="text-align: left; ">
+                  <font style="font-size: 24px;" color="#ffffff">34453780698L</font>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Local &amp; global variables</h2>
+            <div class="fragment" data-fragment-index="0">
+              <div>
+                <pre><code>#!/usr/bin/env python
+      def change(b):
+      &nbsp; &nbsp; a = 90
+      &nbsp; &nbsp; print a
+      a = 9
+      print "Before the function call ", a
+      print "inside change function",
+      change(a)
+      print "After the function call ", a </code></pre>
+              </div>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div class="fragment" data-fragment-index="1">
+              <div style="text-align: left; ">
+                <font style="font-size: 24px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The output</font>
+              </div>
+              <div>
+                <pre><code>$ ./local.py
+      Before the function call &nbsp;9
+      inside change function 90
+      After the function call &nbsp;9 </code></pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div>
+              <br>
+            </div>
+            <div>
+              <br>
+            </div>
+            <div style="text-align: left; ">
+              <font style="font-size: 24px;">An example for <b style="font-size: 32px;">global</b> variable usage</font>
+            </div>
+            <div>
+              <pre><code>#!/usr/bin/env python
+      def change(b):
+      &nbsp; &nbsp; global a
+      &nbsp; &nbsp; a = 90
+      &nbsp; &nbsp; print a
+      a = 9
+      print "Before the function call ", a
+      print "inside change function",
+      change(a)
+      print "After the function call ", a </code></pre>
+            </div>
+            <br>
+          </section>
+        </section>
+      </div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
